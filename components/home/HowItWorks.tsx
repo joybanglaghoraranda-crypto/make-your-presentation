@@ -12,31 +12,25 @@ export function HowItWorks() {
     {
       num: "01",
       title: "বিষয় নির্বাচন",
-      desc: "লেভেল, শ্রেণি বা বিষয় বেছে নিন",
+      desc: "টপিক বা অধ্যায় বেছে নিন",
       icon: "🎯",
     },
     {
       num: "02",
-      title: "চাহিদা জানান",
+      title: "তথ্য প্রদান",
       desc: "স্লাইড সংখ্যা ও রেফারেন্স দিন",
       icon: "📝",
     },
     {
       num: "03",
-      title: "স্লাইড তৈরি",
-      desc: "অভিজ্ঞ ডিজাইনারদের হাতে নির্মাণ",
+      title: "ডিজাইন ও প্রিভিউ",
+      desc: "স্লাইড তৈরি ও ফ্রি রিভিশন",
       icon: "🎨",
     },
     {
       num: "04",
-      title: "প্রিভিউ ও রিভিশন",
-      desc: "প্রিভিউ দেখে সংশোধন জানান",
-      icon: "🔍",
-    },
-    {
-      num: "05",
       title: "ফাইল গ্রহণ",
-      desc: "PPTX ও PDF ফাইল বুঝে নিন",
+      desc: "PPTX ও PDF বুঝে নিন",
       icon: "📥",
     },
   ];
@@ -46,14 +40,14 @@ export function HowItWorks() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-[#1456C8]">
-            প্রক্রিয়া
+            পদ্ধতি
           </span>
           <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-[#0B2A63] font-heading">
             {t("howItWorksTitle")}
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {steps.map((step, idx) => (
             <div
               key={idx}

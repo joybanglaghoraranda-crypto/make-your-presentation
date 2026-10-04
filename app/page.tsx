@@ -1,8 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { GlobalSearch } from "@/components/home/GlobalSearch";
 import { CategoryCards } from "@/components/home/CategoryCards";
-import { EducationPopular } from "@/components/home/EducationPopular";
-import { TargetAudiences } from "@/components/home/TargetAudiences";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { FAQSection } from "@/components/home/FAQSection";
@@ -17,25 +15,19 @@ export default function HomePage() {
       {/* 2. Global Search */}
       <GlobalSearch />
 
-      {/* 3. Main Category Cards (Education, Business, Professional, Custom) */}
+      {/* 3. Categories (Education, Business, Professional) */}
       <CategoryCards />
 
-      {/* 4. Popular Education Subjects */}
-      <EducationPopular />
-
-      {/* 5. Teachers, Students & Businesses Sections */}
-      <TargetAudiences />
-
-      {/* 6. How It Works (5 Steps) */}
+      {/* 4. How It Works (4 Simple Steps) */}
       <HowItWorks />
 
-      {/* 7. Why Choose Us */}
+      {/* 5. Why Choose Us (4 Core Highlights) */}
       <WhyChooseUs />
 
-      {/* 8. FAQ Section */}
+      {/* 6. FAQ Section (Top 4 Questions) */}
       <FAQSection />
 
-      {/* 9. Final Strategic CTA */}
+      {/* 7. Final Strategic CTA */}
       <FinalCTA />
     </div>
   );

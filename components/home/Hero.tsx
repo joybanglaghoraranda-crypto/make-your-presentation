@@ -15,52 +15,48 @@ import { useLanguage } from "@/lib/i18n/context";
 const SLIDES = [
   {
     chip: "Class 8 Science",
-    tag: "Class 8, Science",
+    tag: "Class 8 • Science",
     title: "Photosynthesis: how leaves make food",
     arabic: null,
     bullets: [
       "Chlorophyll captures sunlight",
-      "Carbon dioxide + water become glucose + oxygen",
-      "Stomata let gases move in and out",
+      "CO₂ + H₂O → Glucose + O₂",
     ],
     slideNumber: 4,
     diagramType: "leaf",
   },
   {
     chip: "Dakhil Hadith",
-    tag: "Dakhil, Hadith",
+    tag: "Dakhil • Hadith",
     title: "Actions are judged by intentions",
     arabic: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
     bullets: [
       "Hadith of Umar ibn al-Khattab (RA)",
-      "Sincerity (ikhlas) comes before action",
-      "Reflection: set your niyyah today",
+      "Sincerity (Ikhlas) before action",
     ],
     slideNumber: 2,
     diagramType: "star",
   },
   {
-    chip: "Class 5 Mathematics",
-    tag: "Class 5, Mathematics",
-    title: "Reading fractions on a pie",
+    chip: "Class 5 Math",
+    tag: "Class 5 • Math",
+    title: "Fractions on a pie",
     arabic: null,
     bullets: [
-      "Denominator: equal parts in total",
-      "Numerator: parts we take",
-      "Here 3 of 4 parts are shaded",
+      "Total equal parts: 4",
+      "Shaded fraction: 3/4",
     ],
     slideNumber: 7,
     diagramType: "pie",
   },
   {
-    chip: "Pitch deck",
-    tag: "Business, Startup pitch deck",
-    title: "A market worth entering",
+    chip: "Pitch Deck",
+    tag: "Business • Pitch",
+    title: "Target market growth",
     arabic: null,
     bullets: [
-      "Size of the market today",
-      "Growth over the next four years",
-      "The segment we enter first",
+      "Current market opportunity",
+      "Projected 4-year expansion",
     ],
     slideNumber: 5,
     diagramType: "bars",
@@ -261,11 +257,6 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Stage Note */}
-              <div className="mt-3 flex items-center justify-between text-xs text-[#586480]">
-                <span>Sample slide designs by our team</span>
-                <span className="font-semibold text-[#1456C8]">Delivered as PPTX and PDF</span>
-              </div>
             </div>
           </div>
         </div>

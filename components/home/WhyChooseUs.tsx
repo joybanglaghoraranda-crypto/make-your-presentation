@@ -17,33 +17,23 @@ export function WhyChooseUs() {
   const reasons = [
     {
       icon: <BookOpenCheck className="h-5 w-5 text-[#1456C8]" />,
-      title: "সিলেবাস ভিত্তিক নির্ভুলতা",
-      desc: "পাঠ্যবই ও সঠিক তথ্যের সমন্বয়",
+      title: "নির্ভুল কন্টেন্ট",
+      desc: "সিলেবাস ও তথ্যভিত্তিক",
     },
     {
       icon: <Palette className="h-5 w-5 text-[#1456C8]" />,
-      title: "প্রিমিয়াম ভিজ্যুয়াল ডিজাইন",
-      desc: "পরিচ্ছন্ন ও আন্তর্জাতিক মানের স্লাইড",
+      title: "মডার্ন ডিজাইন",
+      desc: "পরিচ্ছন্ন ও দৃষ্টিনন্দন",
     },
     {
-      icon: <Languages className="h-5 w-5 text-[#17803F]" />,
-      title: "বাংলা, ইংরেজি ও আরবি",
-      desc: "সঠিক বানান ও হরকতযুক্ত টেক্সট",
+      icon: <Clock className="h-5 w-5 text-[#17803F]" />,
+      title: "দ্রুত ডেলিভারি",
+      desc: "২৪-৪৮ ঘণ্টায় প্রাপ্তি",
     },
     {
       icon: <RotateCcw className="h-5 w-5 text-[#E86F00]" />,
-      title: "ফ্রি রিভিশন সুবিধা",
-      desc: "পছন্দ অনুযায়ী পরিবর্তন নিশ্চিত",
-    },
-    {
-      icon: <Clock className="h-5 w-5 text-[#1456C8]" />,
-      title: "দ্রুত ও সময়নিষ্ঠ ডেলিভারি",
-      desc: "২৪-৪৮ ঘণ্টার এক্সপ্রেস সার্ভিস",
-    },
-    {
-      icon: <FileCheck className="h-5 w-5 text-[#17803F]" />,
-      title: "এডিটেবল PPTX ও PDF",
-      desc: "পাওয়ারপয়েন্ট ও হ্যান্ডআউট ফাইল",
+      title: "ফ্রি রিভিশন",
+      desc: "প্রয়োজনমতো পরিবর্তন",
     },
   ];
 
@@ -55,11 +45,11 @@ export function WhyChooseUs() {
             সুবিধাসমূহ
           </span>
           <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-[#0B2A63] font-heading">
-            কেন Make Your Presentation?
+            কেন MYP প্রেজেন্টেশন?
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3.5 sm:gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {reasons.map((r, i) => (
             <div
               key={i}

@@ -45,13 +45,10 @@ export function GlobalSearch() {
   }, []);
 
   const sampleTags = [
-    { label: "Class 5 Science", query: "Class 5 Science" },
-    { label: "Photosynthesis", query: "Photosynthesis" },
-    { label: "Physics", query: "Physics" },
-    { label: "Investor Pitch Deck", query: "Pitch Deck" },
+    { label: "বিজ্ঞান", query: "Science" },
+    { label: "গণিত", query: "Math" },
     { label: "Hadith", query: "Hadith" },
-    { label: "Thesis Defense", query: "Thesis" },
-    { label: "CSE Database", query: "Database" },
+    { label: "Pitch Deck", query: "Pitch Deck" },
   ];
 
   return (
@@ -61,7 +58,7 @@ export function GlobalSearch() {
         className="relative rounded-2xl border border-slate-200/90 bg-white p-3 shadow-xl shadow-slate-200/60 backdrop-blur"
       >
         <div className="flex items-center gap-3 px-3 py-1">
-          <Search className="h-6 w-6 text-blue-600 shrink-0" />
+          <Search className="h-6 w-6 text-[#1456C8] shrink-0" />
           <input
             type="text"
             value={query}
@@ -86,7 +83,7 @@ export function GlobalSearch() {
           )}
           <Link
             href={`/order?search=${encodeURIComponent(query)}`}
-            className="hidden sm:flex items-center gap-1.5 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-700 active:scale-95 transition-all shrink-0"
+            className="hidden sm:flex items-center gap-1.5 rounded-xl bg-[#1456C8] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#0B2A63] active:scale-95 transition-all shrink-0"
           >
             <span>{t("searchAria")}</span>
             <ArrowRight className="h-4 w-4" />
@@ -102,7 +99,7 @@ export function GlobalSearch() {
               onClick={() => {
                 setQuery(tag.query);
               }}
-              className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              className="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700 hover:bg-blue-50 hover:text-[#1456C8] transition-colors"
             >
               {tag.label}
             </button>
