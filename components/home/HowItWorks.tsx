@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/i18n/context";
 
 export function HowItWorks() {
@@ -11,87 +11,76 @@ export function HowItWorks() {
   const steps = [
     {
       num: "01",
-      title: t("howItWorksStep1"),
-      desc: t("howItWorksStep1Desc"),
+      title: "বিষয় নির্বাচন",
+      desc: "লেভেল, শ্রেণি বা বিষয় বেছে নিন",
       icon: "🎯",
     },
     {
       num: "02",
-      title: t("howItWorksStep2"),
-      desc: t("howItWorksStep2Desc"),
+      title: "চাহিদা জানান",
+      desc: "স্লাইড সংখ্যা ও রেফারেন্স দিন",
       icon: "📝",
     },
     {
       num: "03",
-      title: t("howItWorksStep3"),
-      desc: t("howItWorksStep3Desc"),
+      title: "স্লাইড তৈরি",
+      desc: "অভিজ্ঞ ডিজাইনারদের হাতে নির্মাণ",
       icon: "🎨",
     },
     {
       num: "04",
-      title: t("howItWorksStep4"),
-      desc: t("howItWorksStep4Desc"),
+      title: "প্রিভিউ ও রিভিশন",
+      desc: "প্রিভিউ দেখে সংশোধন জানান",
       icon: "🔍",
     },
     {
       num: "05",
-      title: t("howItWorksStep5"),
-      desc: t("howItWorksStep5Desc"),
+      title: "ফাইল গ্রহণ",
+      desc: "PPTX ও PDF ফাইল বুঝে নিন",
       icon: "📥",
     },
   ];
 
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200/70">
+    <section className="py-12 sm:py-16 bg-[#F7F8FB] border-t border-[#E2E6EF]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100/70 px-3 py-1 text-xs font-bold text-blue-700">
-            <span>Simple Production Process</span>
-          </div>
-          <h2 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
+        <div className="text-center max-w-xl mx-auto mb-10">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#1456C8]">
+            প্রক্রিয়া
+          </span>
+          <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-[#0B2A63] font-heading">
             {t("howItWorksTitle")}
           </h2>
-          <p className="mt-3 text-slate-600 text-base">
-            From initial idea or textbook chapter to final polished PPTX presentation in 5 straightforward steps.
-          </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-blue-400 hover:shadow-md"
+              className="flex flex-col justify-between rounded-xl border border-[#E2E6EF] bg-white p-4 shadow-2xs transition-all hover:border-[#1456C8]"
             >
               <div>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl">{step.icon}</span>
-                  <span className="text-xl font-black text-blue-600/30 font-mono">
+                  <span className="text-xl">{step.icon}</span>
+                  <span className="text-sm font-black text-[#1456C8]/40 font-mono">
                     {step.num}
                   </span>
                 </div>
-                <h3 className="mt-4 text-base font-bold text-slate-900">
+                <h3 className="mt-3 text-sm font-bold text-[#0E1B33]">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                <p className="mt-1 text-xs text-[#586480] leading-snug">
                   {step.desc}
                 </p>
               </div>
-
-              {idx < steps.length - 1 && (
-                <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10">
-                  <div className="h-6 w-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 text-xs">
-                    →
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <Link
             href="/order"
-            className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-bold text-white shadow-md hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center gap-2 rounded-xl bg-[#1456C8] px-6 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-[#0B2A63] transition-colors"
           >
             <span>{t("ctaCreate")}</span>
             <ArrowRight className="h-4 w-4" />

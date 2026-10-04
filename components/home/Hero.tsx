@@ -150,29 +150,26 @@ export function Hero() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
           {/* Left Column: Value Proposition */}
           <div className="lg:col-span-6">
-            <h1 className="font-heading text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[#0B2A63] tracking-tight leading-[1.14]">
-              {t("secondaryTagline")}
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-[#E8F0FD] border border-[#1456C8]/20 px-3 py-1 text-xs font-bold text-[#1456C8]">
+              <span>✨ Make Your Presentation • MYP</span>
+            </div>
+
+            <h1 className="mt-3 font-heading text-3xl sm:text-5xl font-extrabold text-[#0B2A63] tracking-tight leading-[1.15]">
+              {t("tagline")}
             </h1>
 
-            <p className="mt-4 text-base sm:text-lg text-[#586480] leading-relaxed max-w-xl">
+            <p className="mt-3 text-base sm:text-lg text-[#586480] leading-relaxed max-w-lg">
               {t("heroDescription")}
             </p>
 
             {/* CTAs */}
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <Link
                 href="/order"
                 className="inline-flex items-center justify-center gap-2 min-h-[46px] rounded-xl bg-[#1456C8] px-6 py-2.5 text-base font-semibold text-white shadow-md hover:bg-[#0B2A63] active:scale-95 transition-all"
               >
                 <span>{t("ctaCreate")}</span>
                 <ArrowRight className="h-4 w-4" />
-              </Link>
-
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 min-h-[46px] rounded-xl border border-[#E2E6EF] bg-white px-5 py-2.5 text-base font-semibold text-[#0E1B33] hover:border-[#1456C8] hover:text-[#1456C8] active:scale-95 transition-all"
-              >
-                <span>{t("ctaTalkToUs")}</span>
               </Link>
 
               <a
@@ -186,24 +183,17 @@ export function Hero() {
               </a>
             </div>
 
-            <p className="mt-4 text-xs sm:text-sm text-[#586480] font-medium">
-              PPTX, PDF and image files. Bengali, English, Arabic and more.
-            </p>
-
-            {/* Trust factors */}
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-xs font-semibold text-[#586480]">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-[#17803F]" />
-                <span>Textbook Syllabus Aligned</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-[#17803F]" />
-                <span>Accurate Arabic Calligraphy</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-4 w-4 text-[#17803F]" />
-                <span>Free Revision Support</span>
-              </div>
+            {/* Scannable Micro Badges */}
+            <div className="mt-6 flex flex-wrap items-center gap-2 text-xs font-medium text-[#586480]">
+              <span className="rounded-md bg-white border border-[#E2E6EF] px-2.5 py-1 text-[#0E1B33]">
+                ⚡ PPTX ও PDF
+              </span>
+              <span className="rounded-md bg-white border border-[#E2E6EF] px-2.5 py-1 text-[#0E1B33]">
+                🎯 সিলেবাস নির্ভুল
+              </span>
+              <span className="rounded-md bg-white border border-[#E2E6EF] px-2.5 py-1 text-[#0E1B33]">
+                🔄 ফ্রি রিভিশন
+              </span>
             </div>
           </div>
 

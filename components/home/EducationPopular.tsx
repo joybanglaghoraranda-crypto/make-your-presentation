@@ -71,24 +71,21 @@ export function EducationPopular() {
   return (
     <section className="py-16 bg-slate-50 border-y border-slate-200/70">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
           <div>
-            <div className="text-xs font-bold uppercase tracking-wider text-blue-600">
-              Popular Catalog
-            </div>
-            <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Popular Presentation Requests
+            <span className="text-xs font-bold uppercase tracking-wider text-[#1456C8]">
+              জনপ্রিয় প্রেজেন্টেশন
+            </span>
+            <h2 className="mt-1 text-2xl sm:text-3xl font-extrabold text-[#0B2A63] font-heading">
+              বেশি অর্ডার হওয়া টপিক
             </h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Frequently requested syllabus topics designed with pedagogical precision and professional layouts.
-            </p>
           </div>
 
           <Link
             href="/education"
-            className="flex items-center gap-1 text-sm font-bold text-blue-600 hover:text-blue-700"
+            className="flex items-center gap-1 text-xs sm:text-sm font-bold text-[#1456C8] hover:text-[#0B2A63]"
           >
-            <span>Browse Full Educational Directory</span>
+            <span>সব বিষয় দেখুন</span>
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
@@ -125,12 +122,12 @@ export function EducationPopular() {
               </div>
 
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-semibold text-slate-500">Starting from ৳{item.slides * 60}</span>
+                <span className="text-xs font-semibold text-slate-500">৳{item.slides * 60} থেকে</span>
                 <Link
                   href={item.link}
-                  className="flex items-center gap-1 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-blue-700 transition-colors"
+                  className="flex items-center gap-1 rounded-lg bg-[#1456C8] px-3 py-1.5 text-xs font-bold text-white hover:bg-[#0B2A63] transition-colors"
                 >
-                  <span>Request Deck</span>
+                  <span>অর্ডার করুন</span>
                   <ArrowRight className="h-3 w-3" />
                 </Link>
               </div>
