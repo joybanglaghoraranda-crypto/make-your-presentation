@@ -14,16 +14,27 @@ export default function AboutPage() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ label: "About Us" }]} />
 
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100/70 px-3.5 py-1 text-xs font-bold text-blue-700">
-            <span>Our Purpose & Standards</span>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-100/70 px-3.5 py-1 text-xs font-bold text-blue-700">
+              <span>Our Purpose & Standards</span>
+            </div>
+            <h1 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl font-heading">
+              About Make Your Presentation
+            </h1>
+            <p className="mt-3 text-slate-600 text-base leading-relaxed">
+              {siteConfig.description}
+            </p>
           </div>
-          <h1 className="mt-3 text-3xl font-extrabold text-slate-900 sm:text-4xl">
-            About Make Your Presentation
-          </h1>
-          <p className="mt-3 text-slate-600 text-base leading-relaxed">
-            {siteConfig.description}
-          </p>
+          <div className="flex-none rounded-2xl border border-slate-200 bg-white p-4 shadow-md">
+            <img
+              src="/brand-full.webp"
+              alt="Make Your Presentation Logo"
+              width={220}
+              height={170}
+              className="h-auto w-48 object-contain"
+            />
+          </div>
         </div>
 
         {/* Narrative Box */}

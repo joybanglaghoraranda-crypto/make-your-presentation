@@ -31,18 +31,19 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* Column 1: Brand & Contact */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 font-black text-xl text-white shadow-lg">
-                M
+            <div className="flex flex-col items-start gap-2">
+              <div className="inline-block rounded-xl bg-white p-2.5 shadow-md">
+                <img
+                  src="/brand-full.webp"
+                  alt="Make Your Presentation. Your idea, our design, perfect presentation."
+                  width={160}
+                  height={125}
+                  className="h-auto w-36 object-contain"
+                />
               </div>
-              <div>
-                <span className="text-xl font-bold tracking-tight text-white">
-                  Make Your Presentation
-                </span>
-                <span className="block text-xs font-semibold text-blue-400">
-                  MYP • Your Topic. Our Presentation.
-                </span>
-              </div>
+              <span className="block text-xs font-semibold text-blue-300">
+                MYP • Your Topic. Our Presentation.
+              </span>
             </div>
 
             <p className="mt-4 max-w-md text-sm leading-relaxed text-slate-400">

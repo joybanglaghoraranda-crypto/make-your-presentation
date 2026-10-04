@@ -135,6 +135,16 @@ export function Header() {
               <span>{t("navDashboard")}</span>
             </Link>
 
+            <a
+              href="/fast"
+              className="inline-flex items-center gap-1 rounded-full bg-amber-50 border border-amber-200/80 px-2 py-0.5 text-[10px] font-bold text-amber-700 hover:bg-amber-100 transition-colors"
+              title="Instant Single-Page Mode (< 100ms load)"
+            >
+              <span>⚡ Fast HTML Mode</span>
+            </a>
+
+            <span className="text-slate-300">|</span>
+
             <Link
               href="/admin"
               className="flex items-center gap-1 font-medium text-slate-700 hover:text-blue-600 transition-colors"
@@ -149,16 +159,20 @@ export function Header() {
       {/* Main navigation container */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6">
         {/* Brand identity */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-700 via-indigo-600 to-blue-500 text-white font-black text-xl shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-            M
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-bold tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
-              Make Your Presentation
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <img
+            src="/brand-mark.webp"
+            alt="Make Your Presentation"
+            width={64}
+            height={36}
+            className="h-9 w-auto rounded object-contain transition-transform group-hover:scale-105"
+          />
+          <div className="flex flex-col leading-tight">
+            <span className="font-heading font-extrabold text-[1.12rem] tracking-tight text-[#0B2A63]">
+              Make Your <span className="text-[#E86F00] font-bold">Presentation</span>
             </span>
-            <span className="text-[11px] font-medium text-slate-500 tracking-wide uppercase">
-              MYP • Global Presentation Platform
+            <span className="text-[10px] font-semibold text-[#586480] tracking-wide">
+              MYP • Your Topic. Our Presentation.
             </span>
           </div>
         </Link>

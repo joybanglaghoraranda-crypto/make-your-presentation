@@ -53,7 +53,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="bn" dir="ltr" className="scroll-smooth">
-      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="/brand-mark.webp" type="image/webp" />
+      </head>
+      <body className="min-h-screen flex flex-col bg-[#F7F8FB] text-[#0E1B33] antialiased selection:bg-[#1456C8] selection:text-white font-sans">
         <LanguageProvider>
           <Header />
           <main className="flex-1">{children}</main>
